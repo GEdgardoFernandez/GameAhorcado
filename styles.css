@@ -4,61 +4,67 @@ body {
     background-size: cover;
     font-family: 'Prata', serif;;
     min-height: 100vh;
+    padding: 0;
 }
+
 header {
     background-color: black;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
+
 .menu ul li {
     list-style-type: none;
-    display: inline-flex;
-    padding: 0;
-    margin: 2px;
-    
+    display: inline;
+    margin-left: 5px;
 }
+
 .menu ul li:hover {
     background-color: bisque;
     color: black;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: aliceblue;
 }
+
 .menu a:hover {
     color: black;
 }
+
 main {
     width: 90%;
     margin: auto;
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 15px;
+    padding: 10px;
     background: rgba(0, 0, 0, .5);
     display: flex;
     gap: 20px;
-    height: 500px;
+     /* Cambiado a columna en pantallas pequeñas */
 }
+
 main h1 {
- 
-    justify-content: center;
     text-align: center;
     margin: 10px;
     padding: 20px;
     color: white;
 }
+
 main h4 {
     color: white;
 }
-#imagen{
-    width: 600px;
-}
 
+#imagen {
+    width: 50%; /* Hacer que la imagen sea 100% del contenedor */
+    height: 50%;
+}
 
 #stringAdivinar {
     height: 2em;
 }
 
-#stringAdvinar span{
+#stringAdvinar span {
     font-size: 2em;
     border-bottom: 2px solid rgb(0, 255, 195);
     width: 25px;
@@ -66,11 +72,10 @@ main h4 {
     margin-right: 6px;
     display: inline-block;
     vertical-align: bottom;
-
 }
 
-#letras{
-    margin-top: 30px;
+#letras {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 3px;
@@ -81,6 +86,7 @@ main h4 {
     width: 28px;
     text-align: center;
 }
+
 #gameover {
     color: rgb(12, 11, 11);
 }
@@ -93,27 +99,62 @@ main h4 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-contenido {
+}
+
+.modal-contenido {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(25, 250, 25);
+    background-color: rgb(108, 179, 108);
     padding: 20px;
     border-radius: 8px;
-  }
-  
-  .cerrar {
+}
+
+.cerrar {
     float: right;
     font-size: 30px;
     cursor: pointer;
     font-size: 30px;
     top: 20px;
-  }
-  .cerrar:hover {
+}
+
+.cerrar:hover {
     transition: 0.3s;
     font-size: 40px;
     color: red;
-  }
+}
+
+/** Responsive **/
+
+/* Estilos para pantallas más pequeñas (tabletas) */
+@media only screen and (max-width: 768px) {
+    main {
+        gap: 10px;
+        flex-direction: column;
+
+
+    }
+    .menu ul li {
+        display: block;
+    }
+    #imagen {
+        width: 100%; /* Hacer que la imagen sea 100% del contenedor */
+    }
+    
+}
+
+/* Estilos para pantallas aún más pequeñas (teléfonos) */
+@media only screen and (max-width: 480px) {
+    main {
+        gap: 5px;
+        flex-direction: column;
+    }
+    .menu ul li {
+        display: block;
+    }
+    #imagen {
+        width: 100%; /* Hacer que la imagen sea 100% del contenedor */
+    }
+    
+}
