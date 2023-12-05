@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background: url(img/fondo.jpeg) no-repeat center;
+    background-size: cover;
+    font-family: 'Prata', serif;;
+    min-height: 100vh;
+}
+header {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+.menu ul li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 2px;
+    
+}
+.menu ul li:hover {
+    background-color: bisque;
+    color: black;
+}
+.menu a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu a:hover {
+    color: black;
+}
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    gap: 20px;
+    height: 500px;
+}
+main h1 {
+ 
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+}
+main h4 {
+    color: white;
+}
+#imagen{
+    width: 600px;
+}
+
+
+#stringAdivinar {
+    height: 2em;
+}
+
+#stringAdvinar span{
+    font-size: 2em;
+    border-bottom: 2px solid rgb(0, 255, 195);
+    width: 25px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+
+#letras{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+#letras button {
+    padding: 4px 0;
+    width: 28px;
+    text-align: center;
+}
+#gameover {
+    color: rgb(12, 11, 11);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(25, 250, 25);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .cerrar {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    top: 20px;
+  }
+  .cerrar:hover {
+    transition: 0.3s;
+    font-size: 40px;
+    color: red;
+  }
