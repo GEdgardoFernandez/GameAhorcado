@@ -85,6 +85,8 @@ main h4 {
     padding: 4px 0;
     width: 28px;
     text-align: center;
+    font-weight: bold;
+    font-size: large;
 }
 
 #gameover {
@@ -123,6 +125,11 @@ main h4 {
     transition: 0.3s;
     font-size: 40px;
     color: red;
+}
+#play {
+    font-size: x-large;
+    font-weight: bold;
+    
 }
 
 /** Responsive **/
